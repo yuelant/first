@@ -1,54 +1,179 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>灯月如旧</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <title>灯月如旧</title>
-</head>
+      /* {
+              border: 1px solid #000000;
+            }*/
+      .flex {
+        display: flex;
+      }
 
-<body>
-  </div>
-  <div style="
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 15px;
-      line-height:1.2;
-    ">
-    <b>
-      <h1 style="
-        color:#39C5BB  ;
-        max-width: 300px;
-        ">你好，我是灯月如旧</h1>
-      <p>目前是一名即将毕业的大四学生</p>
-      <p>很高兴你能点进我的个人网站</p>
-    </b>
-    <p style="
-      color:#FFFFFF;
-      background-color: #33FF33;
-	  max-width: 375px;
-				"> 2025/3/18 正在为完成毕业设计而进行html的学习</p>
+      .flex1 {
+        flex: 1;
+      }
 
-  </div>
-  <div style="
-      margin: 50px auto;
-      padding: 15px;
-      color: #d2b48c;
-      text-align: right;
-    ">
-    <small><em>
-        <p>三更灯火五更鸡，正是男儿读书时</p>
-      </em></small>
-  </div>
-  <div style=" 
-      background-color: #f1f1f1;
-      text-align: center;
-      margin:30px auto;
-      padding: 20px;
-    ">
-    <small>
-      <p>这里是灯月如旧的个人网站</p>
-    </small>
-  </div>
-</body>
+      .col {
+        flex-direction: column;
+      }
 
+      .baiSe {
+        background-color: white;
+      }
+
+      .yinYing {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+
+      .touYy {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      }
+
+      .mg8 {
+        margin: 8px;
+      }
+
+      .mgr8 {
+        margin-right: 8px;
+      }
+
+      .mgr15 {
+        margin-right: 15px;
+      }
+
+      .mgt8 {
+        margin-top: 8px;
+      }
+
+      .mgt30 {
+        margin-top: 30px;
+      }
+
+      .shuPai {
+        writing-mode: vertical-lr;
+      }
+
+      .wJuZhong {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+      }
+
+      .Coloring {
+        color: #21ad8c;
+      }
+
+      .Colored {
+        color: #b70e51;
+      }
+
+      .Wcenter {
+        text-align: center;
+      }
+      .top {
+        position: fixed;
+        bottom: 20%;
+        margin-right: 10px;
+        width: 100%;
+        text-align: right;
+        font-size: 20px;
+        font-style: italic;
+        color: #d2b48c;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 150px; z-index: 1" class="baiSe mgr8 yinYing">
+      <!--头像栏-->
+      <div
+        style="padding: 10px; align-items: center; justify-content: center"
+        class="flex col mgt8">
+        <!--头像-->
+        <img
+          src="temp.png"
+          width="65px"
+          height="65px"
+          alt="头像"
+          box-shadow:
+          rgba(0,0,0,
+          0.1)
+          0px
+          4px
+          6px
+          -1px,
+          rgba(0,
+          0,
+          0,
+          0.06)
+          0px
+          2px
+          4px
+          -1px; />
+        <!--名字-->
+        <div class="mgt8">灯月如旧</div>
+      </div>
+    </div>
+
+    <!--右区-->
+    <div style="flex: 2" class="flex col mg8 mgr15">
+      <!--自我介绍-->
+      <div style="height: 100px" class="flex col baiSe yinYing">
+        <div class="Wcenter mgt8">你好，我是灯月如旧</div>
+        <div class="Wcenter mgt8">现在是一名即将毕业的大四学生</div>
+        <div class="Wcenter mgt8">很高兴你能点进我的个人网站</div>
+      </div>
+      <!--正在做的事-->
+      <div class="flex1 flex col baiSe mgt8 yinYing">
+        <!--标题-->
+        <div style="height: 35px" class="Coloring Wcenter mgt8">正在做的事</div>
+        <!--事件栏-->
+        <div class="flex1 flex">
+          <div style="width: 20px" class="shuPai Coloring">
+            正在进行HMTL的学习
+          </div>
+          <div style="width: 20px" class="shuPai Coloring">
+            正在进行数学分析的学习
+          </div>
+          <div style="width: 20px" class="shuPai Coloring">
+            正在进行高等代数的学习
+          </div>
+          <div style="width: 20px" class="shuPai Coloring">
+            正在进行英语一的学习
+          </div>
+          <div style="width: 20px" class="shuPai Coloring">
+            正在准备软件工程毕业论文
+          </div>
+          <div style="width: 20px" class="shuPai Coloring">
+            正在准备工商管理毕业论文
+          </div>
+        </div>
+      </div>
+      <!--已经做的事-->
+      <div class="flex1 flex col baiSe mgt30 yinYing">
+        <!--标题-->
+        <div style="height: 35px" class="Colored Wcenter mgt8">
+          已经做好的事
+        </div>
+        <!--事件栏-->
+        <div class="flex1 flex">
+          <div style="width: 20px" class="shuPai Colored">此处占位</div>
+        </div>
+      </div>
+    </div>
+    <!--图片展示-->
+    <div style="flex: 1" class="baiSe mg8 yinYing">此处该有图片</div>
+    <div class="top">三更灯火五更鸡，正是男儿读书时</div>
+  </body>
 </html>
